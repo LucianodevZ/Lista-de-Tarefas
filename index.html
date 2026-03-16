@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <img src="imagens/teste.png" class="gengar1">
+        <div class="input_area">
+            <input type="text" id="tarefa_input" placeholder="Digite sua tarefa!">
+            <img src="imagens/add.svg" class="icon-add" id="icon">
+            <button id="abrirModal">Adicionar</button>
+        </div>
+    </header>
+
+    <main class="board">
+        
+        <div class="coluna urgente">
+            <h2>Urgente</h2>
+            <ul id="lista_urgente"></ul>
+        </div>
+
+        <div class="coluna media">
+            <h2>Média</h2>
+            <ul id="lista_media"></ul>
+        </div>
+
+        <div class="coluna baixa">
+            <h2>Baixa</h2>
+            <ul id="lista_baixa"></ul>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h1>Escolha a prioridade da tarefa</h1>
+                <button data-prioridade="urgente">Urgente</button>
+                <button data-prioridade="media">Média</button>
+                <button data-prioridade="baixa">Baixa</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
